@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -12,12 +11,11 @@
     <link rel="stylesheet" type="text/css" href="~/assets/css/custom.css">
     <title>@ViewBag.Title - CatraSports</title>
 </head>
-
 <body class="cm-no-transition cm-1-navbar">
     <div id="cm-menu">
         <nav class="cm-navbar cm-navbar-primary">
             <div class="cm-flex">
-                <a href="index.html" class="cm-logo">Catra<span>Sport</span></a>
+                <a href="index.html" class="cm-logo">Catra<span>Sports</span></a>
             </div>
             <div class="btn btn-primary md-menu-white" data-toggle="cm-menu"></div>
         </nav>
@@ -26,21 +24,21 @@
                 <div id="cm-menu-scroller">
                     <ul class="cm-menu-items">
                         <li class="active">
-                        <a href="/" class="sf-house">Inicio</a>
+                            <a href="/" class="sf-house">Inicio</a>
+                        </li>
+                        <li >
+                            <a href="/Productos" class="sf-layers">Productos</a>
                         </li>
                         <li>
-                        <a href="/Productos" class="sf-layers">Productos</a>
+                            <a href="/Categorias" class="sf-address-book">Categorias</a>
                         </li>
                         <li>
-                            @Html.ActionLink("Categorias", "Index", "Categorias", null, new { @class = "sf-address-book" })
+                            <a href="/Clientes" class="sf-profile-group">Clientes</a>
                         </li>
                         <li>
-                        <a href="/Clientes" class="sf-profile-group">Clientes</a>
+                            <a href="/Ordenes" class="sf-box-in">Ordenes</a>
                         </li>
-                        <li>
-                        <a href="/Ordenes" class="sf-box-in">Ordenes</a>
-                        </li>
-                    </ul>
+                    </ul>                                                              
                 </div>
             </div>
         </div>
@@ -66,15 +64,15 @@
     </header>
     <div id="global">
         <div class="container-fluid">
-            <div class="panel panel-default">
-                @RenderBody();
+            <div class="panel panel-default">              
                 <div class="panel-body" id="demo-buttons">
+                    @RenderBody()
                 </div>
             </div>
         </div>
         <footer class="cm-footer">
             <span class="pull-left">
-                <p>&copy; @DateTime.Now.Year - CatraSports♥☻☺</p>
+                &copy; @DateTime.Now.Year - CatraSports♥☻☺</p>
             </span>
         </footer>
     </div>
@@ -86,5 +84,4 @@
     <script src="~/assets/js/clearmin.min.js"></script>
     <script src="~/assets/js/demo/home.js"></script>
 </body>
-
 </html>

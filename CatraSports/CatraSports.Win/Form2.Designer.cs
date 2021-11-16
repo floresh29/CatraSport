@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.listaVentasPorProductosDataGridView = new System.Windows.Forms.DataGridView();
+            this.listaVentasPorProductoDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listaVentasPorProductosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listaVentasPorProductoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductosDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // listaVentasPorProductosDataGridView
+            // listaVentasPorProductoDataGridView
             // 
-            this.listaVentasPorProductosDataGridView.AutoGenerateColumns = false;
-            this.listaVentasPorProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaVentasPorProductosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.listaVentasPorProductoDataGridView.AutoGenerateColumns = false;
+            this.listaVentasPorProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaVentasPorProductoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.listaVentasPorProductosDataGridView.DataSource = this.listaVentasPorProductosBindingSource;
-            this.listaVentasPorProductosDataGridView.Location = new System.Drawing.Point(26, 52);
-            this.listaVentasPorProductosDataGridView.Name = "listaVentasPorProductosDataGridView";
-            this.listaVentasPorProductosDataGridView.Size = new System.Drawing.Size(374, 220);
-            this.listaVentasPorProductosDataGridView.TabIndex = 1;
+            this.listaVentasPorProductoDataGridView.DataSource = this.listaVentasPorProductoBindingSource;
+            this.listaVentasPorProductoDataGridView.Location = new System.Drawing.Point(23, 66);
+            this.listaVentasPorProductoDataGridView.Name = "listaVentasPorProductoDataGridView";
+            this.listaVentasPorProductoDataGridView.Size = new System.Drawing.Size(466, 256);
+            this.listaVentasPorProductoDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -71,15 +71,15 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Total";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // listaVentasPorProductosBindingSource
+            // listaVentasPorProductoBindingSource
             // 
-            this.listaVentasPorProductosBindingSource.DataSource = typeof(CatraSports.BL.ReporteVentasPorProducto);
+            this.listaVentasPorProductoBindingSource.DataSource = typeof(CatraSports.BL.ReporteVentasPorProducto);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(311, 12);
+            this.button1.Location = new System.Drawing.Point(362, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(106, 33);
             this.button1.TabIndex = 2;
             this.button1.Text = "Refrescar";
             this.button1.UseVisualStyleBackColor = true;
@@ -89,21 +89,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 301);
+            this.ClientSize = new System.Drawing.Size(506, 336);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listaVentasPorProductosDataGridView);
+            this.Controls.Add(this.listaVentasPorProductoDataGridView);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductosDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaVentasPorProductoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.BindingSource listaVentasPorProductosBindingSource;
-        private System.Windows.Forms.DataGridView listaVentasPorProductosDataGridView;
+        private System.Windows.Forms.BindingSource listaVentasPorProductoBindingSource;
+        private System.Windows.Forms.DataGridView listaVentasPorProductoDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

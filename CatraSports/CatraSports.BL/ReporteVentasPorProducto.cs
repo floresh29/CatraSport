@@ -11,10 +11,5 @@ namespace CatraSports.BL
         public string Producto { get; set; }
         public int Cantidad { get; set; }
         public double Total { get; set; }
-
-        public static implicit operator ReporteVentasPorProducto(ReportedeVentasPorProductoBL v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

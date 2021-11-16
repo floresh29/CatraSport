@@ -13,12 +13,11 @@ namespace CatraSports.WebAdmin.Controllers
         {
             return View();
         }
-         
-            [HttpPost]
+
+        [HttpPost]
         public ActionResult Index(FormCollection data)
-            
-            {
-            return RedirectToAction("Index", "Home"); ;
+        {
+            return RedirectToAction("Index", "Home");
         }
     }
 }

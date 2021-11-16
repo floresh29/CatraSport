@@ -19,7 +19,6 @@ namespace CatraSports.BL
 
         public List<Producto> ObtenerProductos()
         {
-
             ListadeProductos = _contexto.Productos
                 .Include("Categoria")
                 .OrderBy(r => r.Categoria.Descripcion)
@@ -27,6 +26,7 @@ namespace CatraSports.BL
                 .ToList();
             return ListadeProductos;
         }
+
         public List<Producto> ObtenerProductosActivos()
         {
             ListadeProductos = _contexto.Productos
@@ -37,7 +37,7 @@ namespace CatraSports.BL
             return ListadeProductos;
         }
 
-    public void GuardarProducto(Producto producto)
+        public void GuardarProducto(Producto producto)
         {
             if(producto.Id == 0)
             {

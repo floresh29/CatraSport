@@ -11,17 +11,15 @@ using System.Windows.Forms;
 
 namespace CatraSports.Win
 {
-    
-
     public partial class Form2 : Form
     {
-        private object listadeVentasPorProductoBindingSource;
-        ReportedeVentasPorProductoBL _reportedeVentasPorProductoBL;
+        ReporteVentasPorProductoBL _reporteVentasPorProductoBL;
 
         public Form2()
         {
             InitializeComponent();
-            _reportedeVentasPorProductoBL = new ReportedeVentasPorProductoBL();
+            _reporteVentasPorProductoBL = new ReporteVentasPorProductoBL();
+
             RefrescarDatos();
         }
 
@@ -29,12 +27,12 @@ namespace CatraSports.Win
         {
             RefrescarDatos();
         }
+
         private void RefrescarDatos()
         {
-            var listadeVentasPorProducto = _reportedeVentasPorProductoBL.ObtenerVentasPorProducto();
-            listadeVentasPorProductoBindingSource.DataSource = listadeVentasPorProducto;
-            listadeVentasPorProductoBindingSource.ResetBinding (false);
-           
+            var listaVentasPorProducto = _reporteVentasPorProductoBL.ObtenerVentasPorProducto();
+            listaVentasPorProductoBindingSource.DataSource = listaVentasPorProducto;
+            listaVentasPorProductoBindingSource.ResetBindings(false);
         }
     }
 }
