@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace CatraSports.WebAdmin.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class OrdenDetalleController : Controller
     {
 

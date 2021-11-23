@@ -19,6 +19,7 @@ namespace CatraSports.BL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            Database.SetInitializer(new Datosdeinicio()); // Agregar datos de inicio al momento de  crear  la base de datos
 
         }
 
@@ -28,5 +29,7 @@ namespace CatraSports.BL
 
         public DbSet<Orden> Ordenes { get; set; }
         public DbSet<OrdenDetalle> OrdenDetalle { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
     }
 }
